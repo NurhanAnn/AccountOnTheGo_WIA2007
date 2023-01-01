@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Home"
-        android:icon="@drawable/home"
-        android:id="@+id/home"/>
-
-    <item android:title="Profile"
-        android:icon="@drawable/profile"
-        android:id="@+id/profile"/>
-
-    <item android:title="Notes"
+    <item
+        android:id="@+id/DestNotes"
         android:icon="@drawable/notes"
-        android:id="@+id/notes"/>
+        android:title="Notes"/>
 
-    <item android:title="Quiz"
-        android:icon="@drawable/quiz"
-        android:id="@+id/quiz" />
-
-    <item android:title="Past Year Questions"
+    <item
+        android:id="@+id/pyears"
         android:icon="@drawable/pyears"
-        android:id="@+id/pyears" />
+        android:title="Past Year Questions" />
+
+    <item
+        android:id="@+id/DestHome"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/quiz"
+        android:icon="@drawable/quiz"
+        android:title="Quiz" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
 </menu>

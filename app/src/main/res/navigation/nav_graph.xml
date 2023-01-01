@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/DestHome">
+    <activity
+        android:id="@+id/DestHome"
+        android:name="com.example.accountonthego_wia2007.Home"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/DestNotes"
+        android:name="com.example.accountonthego_wia2007.Notes"
+        android:label="activity_notes"
+        tools:layout="@layout/activity_notes" />
+</navigation>
