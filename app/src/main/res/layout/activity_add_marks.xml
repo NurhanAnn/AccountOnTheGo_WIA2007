@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMarks">
+
+    <TextView
+        android:id="@+id/TVTypeQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="215dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="Type of Quiz"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVDateAnswered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="182dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="Date Answered"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVTypeQuiz" />
+
+    <TextView
+        android:id="@+id/TVMarkObtained"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="185dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="Mark Obtained"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVDateAnswered" />
+
+    <ImageView
+        android:id="@+id/IVTypeQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVTypeQuiz"
+        app:srcCompat="@drawable/addmarksrectangle" />
+
+    <ImageView
+        android:id="@+id/IVDateAnswered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVDateAnswered"
+        app:srcCompat="@drawable/addmarksrectangle" />
+
+    <ImageView
+        android:id="@+id/IVMarkObtained"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVMarkObtained"
+        app:srcCompat="@drawable/addmarksrectangle" />
+
+    <EditText
+        android:id="@+id/ETDateAnswered"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:text="Enter the date you answered the quiz"
+        android:textColor="#8A8787"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/IVDateAnswered"
+        app:layout_constraintEnd_toEndOf="@id/IVDateAnswered"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="@id/IVDateAnswered"
+        app:layout_constraintTop_toTopOf="@id/IVDateAnswered"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <EditText
+        android:id="@+id/ETTypeQuiz"
+        android:layout_width="273dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Type the name of quiz you answered"
+        android:textColor="#8A8787"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/IVTypeQuiz"
+        app:layout_constraintEnd_toEndOf="@id/IVTypeQuiz"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="@id/IVTypeQuiz"
+        app:layout_constraintTop_toTopOf="@id/IVTypeQuiz"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <EditText
+        android:id="@+id/ETMarkObtained"
+        android:layout_width="274dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Enter the mark you obtained for the quiz"
+        android:textColor="#8A8787"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/IVMarkObtained"
+        app:layout_constraintEnd_toEndOf="@id/IVMarkObtained"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="@id/IVMarkObtained"
+        app:layout_constraintTop_toTopOf="@id/IVMarkObtained"
+        app:layout_constraintVertical_bias="0.533"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
