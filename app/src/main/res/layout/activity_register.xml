@@ -45,7 +45,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/bg_blue_rounded"
         app:srcCompat="@drawable/or"
-        tools:layout_editor_absoluteY="289dp" />
+        tools:layout_editor_absoluteY="289dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
