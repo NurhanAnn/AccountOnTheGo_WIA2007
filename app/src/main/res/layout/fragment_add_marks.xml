@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddMarks">
+    tools:context=".AddMarksFragment">
 
     <TextView
         android:id="@+id/TVTypeQuiz"
