@@ -4,14 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/DestHome">
-    <activity
+    <fragment
         android:id="@+id/DestHome"
-        android:name="com.example.accountonthego_wia2007.Home"
-        android:label="activity_home"
-        tools:layout="@layout/activity_home" />
-    <activity
+        android:name="com.example.accountonthego_wia2007.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/DestProfile"
+        android:name="com.example.accountonthego_wia2007.MyProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
         android:id="@+id/DestNotes"
-        android:name="com.example.accountonthego_wia2007.Notes"
-        android:label="activity_notes"
-        tools:layout="@layout/activity_notes" />
+        android:name="com.example.accountonthego_wia2007.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/DestPYears"
+        android:name="com.example.accountonthego_wia2007.PastYearQuestionsFragment"
+        android:label="PYears"
+        tools:layout="@layout/fragment_past_year_questions" />
+    <fragment
+        android:id="@+id/DestQuiz"
+        android:name="com.example.accountonthego_wia2007.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz" />
 </navigation>

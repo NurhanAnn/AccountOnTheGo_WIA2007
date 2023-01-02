@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/DestNotes"
+        android:id="@+id/notes"
         android:icon="@drawable/notes"
         android:title="Notes"/>
 
@@ -12,7 +12,7 @@
         android:title="Past Year Questions" />
 
     <item
-        android:id="@+id/DestHome"
+        android:id="@+id/home"
         android:icon="@drawable/home"
         android:title="Home" />
     <item

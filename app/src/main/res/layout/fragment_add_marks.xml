@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddMarks">
+    tools:context=".AddMarksFragment">
 
     <TextView
         android:id="@+id/TVTypeQuiz"
@@ -116,7 +116,7 @@
     <EditText
         android:id="@+id/ETMarkObtained"
         android:layout_width="274dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         android:text="Enter the mark you obtained for the quiz"
@@ -127,6 +127,6 @@
         app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="@id/IVMarkObtained"
         app:layout_constraintTop_toTopOf="@id/IVMarkObtained"
-        app:layout_constraintVertical_bias="0.533"/>
+        app:layout_constraintVertical_bias="0.533" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

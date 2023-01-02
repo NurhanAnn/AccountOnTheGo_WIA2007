@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,11 +8,14 @@
     tools:context=".MainActivity">
 
     <FrameLayout
+        android:id="@+id/frame_Layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -21,5 +25,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottomnav"/>
+
+
+
+    <!-- <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="178dp"
+        android:layout_height="93dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="164dp"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="70sp"
+        android:translationX="225dp"
+        android:translationY="500dp" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="start"
+        android:translationX="225dp"
+        android:translationY="600dp" />
+
+    <ImageButton
+        android:id="@+id/button_reset"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_toEndOf="@+id/button_start_pause"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:text="reset"
+        android:translationX="340dp"
+        android:translationY="600dp"
+        app:srcCompat="@drawable/resetbutton"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/catpomodoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_countdown"
+        android:layout_marginTop="384dp"
+        android:layout_marginBottom="-12dp"
+        android:translationX="255dp"
+        android:translationY="0dp"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="414dp"
+        android:layout_height="760dp"
+        android:layout_marginBottom="184dp"
+        android:scaleType="fitCenter"
+        android:translationX="0dp"
+        android:translationY="-270dp"
+        app:srcCompat="@drawable/logo_with_bg" /> -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
